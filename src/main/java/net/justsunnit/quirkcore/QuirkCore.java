@@ -70,6 +70,7 @@ public class QuirkCore implements ModInitializer {
 			return false;
 	}
 
+
 	public static void SetQuirk(Entity entity, QuirkTypes quirk) {
 		// Set the quirk to the entity
 		if (!entity.isPlayer()) {
