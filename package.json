@@ -1,0 +1,19 @@
+{
+  "name": "quirikcore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunnit-M/QuirkCore.git"
+  },
+  "author": "JustSunnit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sunnit-M/QuirkCore/issues"
+  },
+  "homepage": "https://github.com/Sunnit-M/QuirkCore#readme"
+}
