@@ -80,4 +80,36 @@ public class QuirkCore implements ModInitializer {
 
 		playerData.getPersistentData().putString("Quirk", quirk.name());
 	}
+
+	public static QuirkTypes GetQuirk(Entity entity) {
+		// Get the quirk from the entity
+		if (!entity.isPlayer()) {
+			throw new RuntimeException("Error not player");
+		}
+		IEntityDataSaver playerData = (IEntityDataSaver) entity;
+
+		playerData.getPersistentData().getString("Quirk");
+
+		if (playerData.getPersistentData().getString("Quirk").isEmpty()) {
+			return null;
+		}
+
+		for (QuirkTypes value : QuirkTypes.values()) {
+			if (value.name().equalsIgnoreCase(playerData.getPersistentData().getString("Quirk"))) {
+				return value;
+			}
+		}
+
+		return null;
+	}
+
+	public static QuirkTypes StringToQuirk(String quirk) {
+		// Convert a string to a quirk
+		for (QuirkTypes value : QuirkTypes.values()) {
+			if (value.name().equalsIgnoreCase(quirk)) {
+				return value;
+			}
+		}
+		return null;
+	}
 }
