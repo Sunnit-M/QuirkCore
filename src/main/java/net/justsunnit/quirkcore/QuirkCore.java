@@ -16,7 +16,7 @@ public class QuirkCore implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	public static enum QuirkTypes {
+	public enum QuirkTypes {
 		OneForAll,
 		Explosion,
 		HalfHotHalfCold,
@@ -43,7 +43,7 @@ public class QuirkCore implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Quirkcore is initializing.");
 
 		ModRegistries.register();
 	}
